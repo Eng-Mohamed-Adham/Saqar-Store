@@ -1,0 +1,22 @@
+✅ زر رئيسي (Primary Button):
+
+<button className="bg-primary text-white hover:bg-primary-dark py-2 px-4 rounded-xl shadow-soft">
+  إرسال
+</button>
+
+
+✅ خلفية الصفحة:
+<div className="bg-backgroundLight dark:bg-backgroundDark text-textLight dark:text-textDark font-cairo">
+  {/* المحتوى */}
+</div>
+
+✅ عنوان:
+<h1 className="text-xl font-bold text-primary dark:text-primary-light">
+  مرحبًا بك
+</h1>
+
+✅ استخدام الخط:
+<div className="font-cairo text-base sm:text-lg">
+  النص الافتراضي
+</div>
+

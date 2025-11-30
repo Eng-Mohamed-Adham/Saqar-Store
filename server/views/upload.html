@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>رفع منتج</title>
+</head>
+<body>
+  <h2>إضافة منتج جديد</h2>
+  <form action="http://localhost:5000/api/products" method="POST" enctype="multipart/form-data">
+    <label>
+      اسم المنتج:
+      <input type="text" name="name" required />
+    </label>
+    <br />
+
+    <label>
+      الوصف:
+      <textarea name="description" required></textarea>
+    </label>
+    <br />
+
+    <label>
+      السعر:
+      <input type="number" name="price" step="0.01" required />
+    </label>
+    <br />
+
+    <label>
+      القسم:
+      <input type="text" name="category" required />
+    </label>
+    <br />
+
+    <label>
+      المخزون:
+      <input type="number" name="stock" required />
+    </label>
+    <br />
+
+    <label>
+      صورة المنتج:
+      <input type="file" name="image" accept="image/*" required />
+    </label>
+    <br /><br />
+
+    <button type="submit">إرسال</button>
+  </form>
+</body>
+</html>
