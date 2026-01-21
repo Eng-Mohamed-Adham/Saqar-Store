@@ -1,0 +1,24 @@
+services:
+  server:
+    build: ./server
+    container_name: saqar_server
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - MONGODB_URI=mongodb+srv://nfayrws:root**44@cluster0.hvwc12n.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      - NODE_ENV=development
+    volumes:
+      - ./server:/app
+      - /app/node_modules
+
+  client:
+    build: ./client
+    container_name: saqar_client
+    ports:
+      - "5173:5173"
+    depends_on:
+      - server
+    volumes:
+      - ./client:/app
+      - /app/node_modules
