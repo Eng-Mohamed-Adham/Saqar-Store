@@ -5,8 +5,8 @@ const connectDb = async () => {
 
     try{
         await mongoose.connect(
-            // process.env.DBURI
-            'mongodb+srv://nfayrws:root**44@cluster0.hvwc12n.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+            process.env.DBURI
+       
             ,{
 
     });
