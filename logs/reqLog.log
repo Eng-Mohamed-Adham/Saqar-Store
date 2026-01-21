@@ -8847,3 +8847,7 @@
 20260115	09:10:41	ab73d0bb-5658-4d7d-926c-8d93276a02af	GET	/api/products?page=1	http://localhost:5173
 20260115	09:10:41	76c3d214-6f96-4a3a-a0fa-03a3f89e2fa8	GET	/api/auth/refresh	http://localhost:5173
 20260115	09:10:41	69a25418-5063-4dc7-8fb4-610f11b7bf33	GET	/api/offers?	http://localhost:5173
+20260121	12:44:34	3bf482b0-5a8d-4d3f-b55c-866cbb574aac	GET	/api/auth/refresh	http://localhost:5173
+20260121	12:44:42	981b4a48-2bae-4cd6-ad5c-2b2b8ee06f44	GET	/api/products?page=1	http://localhost:5173
+20260121	12:44:42	17f9b808-873c-477c-9a3a-656c15aee1d6	GET	/api/offers?	http://localhost:5173
+20260121	12:44:42	a8405a47-7596-4cd1-ad87-416d1c025a4a	GET	/api/auth/refresh	http://localhost:5173
