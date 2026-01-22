@@ -5,7 +5,7 @@ export const api = createApi({
   reducerPath: 'api',
   baseQuery: fetchBaseQuery({
     // baseUrl: 'http://localhost:5000/api',
-    baseUrl:'https://saqar-store.onrender.com/',
+    baseUrl:'https://saqar-store.onrender.com',
     credentials: 'include',
     headers: {
   'Content-Type': 'application/json', 
