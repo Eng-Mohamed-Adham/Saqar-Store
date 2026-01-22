@@ -1,4 +1,3 @@
-import { optionsSuccessStatus } from "../../../../back_computer_company-master/back_computer_company-master/config/corsOptions";
 import allowsOrigin from "./allowsOrigins";
 
 const coreOptions = {
