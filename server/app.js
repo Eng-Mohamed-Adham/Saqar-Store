@@ -31,7 +31,7 @@ app.use('/api/webhook', stripeWebhook);
 
 // ✅ Middlewares
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://saqar-store-1.onrender.com',
   credentials: true,
 }));
 app.use(cookieParser());
