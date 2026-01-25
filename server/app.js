@@ -42,22 +42,22 @@ app.use(logger);
 app.use('/uploads', express.static('./uploads'));
 
 // ✅ Routes
-app.use('/api/search', searchRoutes);
-app.use('/api/users', userRoutes);
-app.use('/api/auth', authRoutes);
-app.use('/api/products', productRoutes);
-app.use('/api/offers', offerRoutes);
-app.use('/api/orders',(req, res, next) => {
+app.use('/search', searchRoutes);
+app.use('/users', userRoutes);
+app.use('/auth', authRoutes);
+app.use('/products', productRoutes);
+app.use('/offers', offerRoutes);
+app.use('/orders',(req, res, next) => {
   req.io = io;
   next();
 }, orderRoutes);
-app.use('/api/sellers', sellerRoutes);
-app.use('/api/wishlist', wishlistRoutes);
-app.use('/api/stripe', stripeRoutes);
-app.use('/api/contact', contactRoutes);
-app.use('/api/dashboard', adminDashboardRoutes);
-app.use('/api/notifications', notificationRoutes);
-app.use('/api/payment',paymentRoutes)
+app.use('/sellers', sellerRoutes);
+app.use('/wishlist', wishlistRoutes);
+app.use('/stripe', stripeRoutes);
+app.use('/contact', contactRoutes);
+app.use('/dashboard', adminDashboardRoutes);
+app.use('/notifications', notificationRoutes);
+app.use('/payment',paymentRoutes)
 // app.use('/', rootRoutes);
 
 app.get('/', (req, res) => {
